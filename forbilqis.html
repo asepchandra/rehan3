@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-09%20at%2000.06.21_45cbd72c.jpg') no-repeat center center fixed; /* Ganti dengan URL background Anda */
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Happy Anniversary!</h1>
+
+<div class="slideshow-container">
+
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.58.40_71dc6ea3.jpg" style="width:100%">
+        <div class="text">Makasih ya udah mau berjuan sama aku</div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.51.55_4fbababf.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.51.56_4c1256c7.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.50.30_bff967b5.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.50.30_9e58ba68.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.50.30_66aa359b.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.50.29_105385af.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://raw.githubusercontent.com/asepchandra/rehan3/refs/heads/main/bilqis/WhatsApp%20Image%202024-11-08%20at%2023.50.25_6582367a.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n >= slides.length) {slideIndex = 0}
+        if (n < 0) {slideIndex = slides.length - 1}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex].style.display = "block";  
+    }
+</script>
+
+</body>
+</html>
